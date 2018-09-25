@@ -1,3 +1,4 @@
+/*global Redux */
 import ReactDOM from "react-dom";
 import React from "react";
 
@@ -25,7 +26,6 @@ const { createStore } = Redux;
 const store = createStore(counter);
 
 const render = () => {
-  console.info("ren");
   ReactDOM.render(
     <Counter
       value={store.getState()}
@@ -41,5 +41,3 @@ const render = () => {
 };
 store.subscribe(render);
 render();
-
-console.info("state", store.getState());
