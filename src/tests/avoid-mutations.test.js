@@ -46,4 +46,4 @@ const testIncrementCounter = () => {
 testAddCounter();
 testRemoveCounter();
 testIncrementCounter();
-console.log("All test passed.");
+console.info("All test passed.");
